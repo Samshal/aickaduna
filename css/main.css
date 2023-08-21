@@ -214,18 +214,19 @@ Primary use:
     display: none;
   }
   .flip-clock-divider::after {
-    
-  
-
     width: 50px;
     position: absolute;
     left: 100%;
-    top: 100%;
-    padding-top: 23px;
+    top: 70%;
+    padding-top: 0;
   }
 }
 
-
+@media (max-width: 380px) {
+  .flip-clock-divider::after {
+    width: 60px;
+  }
+}
 /*==================================================================
     TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 ==================================================================*/
@@ -535,12 +536,12 @@ Primary use:
     padding-left: 0;
   }
   .flip-clock-wrapper ul li a div div.inn {
-    font-size: 40px;
+    font-size: 30px;
     
   }
 
   .flip-clock-wrapper ul {
-    height: 60px;
+    height: 45px;
   }
   .flip-clock-divider {
     margin-top: -45px;
@@ -575,5 +576,14 @@ Primary use:
 
   .w-full-ssm {width: 100%;}
   /*---------------------------------------------*/
+ 
+}
 
+
+/*//////////////////////////////////////////////////////////////////
+[ XSSM ]*/
+@media (max-width: 380px) {
+  .flip-clock-divider::after {
+    width: 60px;
+  }
 }
